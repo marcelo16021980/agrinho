@@ -1,0 +1,130 @@
+@import url("styles/plantio.css");
+/* Reset */
+body, h1, h2, h3, p, ul, li, img {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Variáveis de cores */
+:root {
+    --verde-claro: #A8D5BA;
+    --verde-medio: #6CA86C;
+    --verde-escuro: #3A653D;
+    --marrom-claro: #D3B391;
+    --marrom-escuro: #8B4513;
+    --cor-soja: #E7C580;
+    --amarelo-soja: #f0f4ad; 
+    --branco: #FFFFFF; 
+}
+
+/* Estilos globais */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #F9F9F9;
+    color: var(--marrom-escuro);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.8); /* Meio transparente */
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    z-index: 1000; /* Certifique-se de que o cabeçalho fique acima de outro conteúdo */
+}
+.cabecalho__pesquisa {
+    padding: 1em;
+    border: 1px solid var(--cor-soja);
+    border-radius: 4px;
+    background-color: var(--amarelo-soja);
+    width: 20%; 
+
+}
+.cabecalho__pesquisa::placeholder{
+    text-align: center;
+    color: black;
+    background: url("../project/img/agricultura-e-jardinagem.png") no-repeat;
+    background-size: 30px;
+    background-position: 1em;
+    padding: 1em;
+}
+.cabecalho-imagem{
+    width: 100px;
+    margin-left: 1em;
+}
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boas__praticas {
+    text-align: center;
+    background-color: var(--amarelo-soja);
+    padding: 40px 20px;
+    padding-top: 8em;
+}
+
+.boas__praticas-titulo {
+    font-size: 2em;
+    color: var(--verde-escuro);
+}
+
+.boas__praticas-texto {
+    font-size: 1.2em;
+    color: var(--marrom-escuro);
+}
+
+.banner img {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.conteudo {
+    padding: 20px;
+}
+
+.conteudo__titulo {
+    font-size: 1.8em;
+    color: var(--verde-escuro);
+    margin-bottom: 20px;
+}
+
+.conteudo__texto, .conteudo__subtitulo {
+    margin-bottom: 20px;
+}
+
+.conteudo__subtitulo {
+    font-size: 1.4em;
+    color: var(--verde-medio);
+}
+
+.conteudo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}

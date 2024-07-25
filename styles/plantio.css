@@ -1,0 +1,23 @@
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    padding-top: 8em;
+}
+.conteudo__titulo {
+    padding-top: 3em;
+    text-align: center;
+}
+.imagem-plantio{ 
+width: 20%;
+display: flex;
+text-align: center; 
+margin: 0 5em; 
+}
+.conteudo-divisao{
+display: flex;
+align-items: center;
+}
+.conteudo__subtitulo{
+    text-align: center;
+}
