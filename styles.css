@@ -8,7 +8,6 @@ body, h1, h2, h3, p, ul, li, img {
     box-sizing: border-box;
 }
 
-/* Variáveis de cores */
 :root {
     --verde-claro: #A8D5BA;
     --verde-medio: #6CA86C;
@@ -18,9 +17,9 @@ body, h1, h2, h3, p, ul, li, img {
     --cor-soja: #E7C580;
     --amarelo-soja: #f0f4ad; 
     --branco: #FFFFFF; 
+    --preto:  #050505;
 }
 
-/* Estilos globais */
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
@@ -39,11 +38,11 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(51, 51, 51, 0.8); /* Meio transparente */
-    color: #fff;
+    background-color: rgba(180, 176, 176, 0.8); 
+    color: #050505;
     text-align: center;
     padding: 5px;
-    z-index: 1000; /* Certifique-se de que o cabeçalho fique acima de outro conteúdo */
+    z-index: 1000; 
 }
 .cabecalho__pesquisa {
     padding: 1em;
@@ -51,12 +50,12 @@ body {
     border-radius: 4px;
     background-color: var(--amarelo-soja);
     width: 20%; 
-
 }
+
 .cabecalho__pesquisa::placeholder{
     text-align: center;
     color: black;
-    background: url("../project/img/agricultura-e-jardinagem.png") no-repeat;
+    background: url("img/agricultura-e-jardinagem.png") no-repeat;
     background-size: 30px;
     background-position: 1em;
     padding: 1em;
@@ -75,14 +74,18 @@ body {
 }
 
 .menu a {
-    color: var(--branco);
+    color: var(--preto);
     text-decoration: none;
     font-weight: bold;
+}
+.menu a:hover{
+    color: var(--branco);
+    text-decoration: underline;
 }
 
 .boas__praticas {
     text-align: center;
-    background-color: var(--amarelo-soja);
+    background-color: var(--branco);
     padding: 40px 20px;
     padding-top: 8em;
 }

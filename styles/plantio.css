@@ -1,4 +1,6 @@
-
+.cabecalho__logotipo{
+    width: 3%;
+}
 .conteudo{
     display: flex;
     flex-direction: column;
